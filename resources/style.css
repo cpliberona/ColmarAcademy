@@ -3,7 +3,8 @@ html {
 }
 
 body {
-
+  font-family: "Open Sans";
+  color: #294558;
 }
 
 .container {
@@ -27,10 +28,21 @@ h2 {
 h3 {
   font-size: 2rem;
   margin: 2rem 0rem;
+  font-weight: bold;
+  color: #294558;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: Karla;
+}
+
+a {
+  color: #00689F;
 }
 
 @media only screen and (max-width: 720px) {
@@ -60,7 +72,12 @@ header {
 }
 
 .logo span {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.logo span:last-child {
+  color: #294558;
 }
 
 .nav ul {
@@ -99,13 +116,13 @@ header {
 .banner {
   display: flex;
   align-items: center;
-  background-color: lightgray;
+  background-color: #294558;
 }
 
 .banner .text {
   min-width: 21rem;
   padding: 0rem 1.5rem;
-  color: gray;
+  color:  #F5F3F1;
 }
 
 .banner p {
@@ -115,17 +132,30 @@ header {
 }
 
 .banner .button {
-  background-color: darkgray;
-  max-width: 100%;
+  background-color: #5C8166;
+  min-width: 100%;
   padding: 0.5rem 0rem;
   font-size: 1.2rem;
   text-align: center;
+  color: #FFFDFC;
 }
 
-.banner a {
-  color: white;
+.banner a{
   text-decoration: none;
 }
+
+.banner .button:hover{
+  background-color: #8A9125;
+  color: #294558;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 100ms ease;
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 720px) {
 .banner {
@@ -212,7 +242,8 @@ header {
 }
 
 .information .box:last-child {
-  background-color: lightgray;
+  background-color: #B1BDCB;
+  color: #FFFDFC;
 }
 
 .information .box img:last-child{
@@ -256,11 +287,12 @@ header {
 
 /* Classes */
 .start {
-  background-color: lightgray;
+  background-color: #294558;
 }
 
 .start h3 {
   text-align: center;
+  color: #FFFDFC;
 }
 
 .classes {
@@ -288,7 +320,7 @@ header {
 }
 
 .class-text p {
-  margin-top: 8px;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 720px) {
@@ -374,10 +406,16 @@ footer {
   margin-right: 1rem;
 }
 
+
 @media only screen and (max-width: 720px) {
 
 footer{
   flex-direction: column;
+}
+
+.social {
+  margin: 1rem;
+
 }
 
 .legal {
