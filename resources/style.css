@@ -152,11 +152,6 @@ header {
 }
 
 
-
-
-
-
-
 @media only screen and (max-width: 720px) {
 .banner {
   flex-direction: column;
@@ -246,9 +241,23 @@ header {
   color: #FFFDFC;
 }
 
+.information .box:last-child:hover{
+  background-color: #8A9125;
+  color: #294558;
+}
+
 .information .box img:last-child{
   display: none;
 }
+
+.box-text a:hover {
+  color: #8A9125;
+}
+
+.information .box:last-child a:hover {
+  color: white;
+}
+
 
 @media only screen and (max-width: 720px) {
 
@@ -305,6 +314,7 @@ header {
   background-color: white;
   flex-basis: 0;
   flex-grow: 1;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
 }
 
 .class-box:last-child {
@@ -376,6 +386,11 @@ video {
   background-color: lightgray;
 }
 
+.thesis .box:first-child:hover {
+  background-color: #8A9125;
+  color: #294558;
+}
+
 
 @media only screen and (max-width: 720px) {
 
@@ -406,6 +421,9 @@ footer {
   margin-right: 1rem;
 }
 
+.social i{
+  margin-right: 1rem;
+}
 
 @media only screen and (max-width: 720px) {
 
@@ -415,7 +433,6 @@ footer{
 
 .social {
   margin: 1rem;
-
 }
 
 .legal {
